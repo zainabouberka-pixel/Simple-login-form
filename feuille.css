@@ -1,0 +1,156 @@
+/* Importing Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Global Reset */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+/* Background setup with centering using CSS Grid */
+html ,body{
+    display:grid;
+    height:100%;
+    Width:100%;
+    place-items: center ;
+    background:linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+
+/* Container styling for the login card */
+div.container{
+    background: #fff ;
+    padding:25px 30px;
+    max-width:350px;
+    border-radius:5px;
+    box-shadow:0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for input wrappers */
+.input-box{
+    height: 45px;
+    width:100%;
+    margin-top:25px;
+    position: relative;
+}
+
+/* Inner input field styling */
+.input-box input{
+    height: 100%;
+    width:100%;
+    outline:none;
+    border:none;
+    font-size: 16px;
+}
+
+/* Styling for the Login title */
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+/* Decorative underline for the title */
+.title::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 35px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+
+.button{
+    margin: 40px 0 20px 0;
+}
+
+/* Static bottom border for inputs */
+.underline::before {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+    content: "";
+}
+
+/* Animated gradient border for inputs (Etape 2) */
+.underline::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+/* Submit button specific styling */
+.input-box input[type="submit"] {
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Submit button hover effect */
+.input-box input[type="submit"]:hover {
+    background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+    letter-spacing: 2px;
+}
+
+/* Base style for social media buttons */
+.facebook a , .twitter a {
+    display: block; 
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    line-height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.facebook i, .twitter i {
+    font-size: 20px;
+    padding-right: 12px;
+}
+
+/* Twitter button gradient background */
+.twitter a {
+    margin: 20px 0 15px 0;
+    background: linear-gradient(to right, #00acee 0%, #1abeff 100%);
+}
+
+/* Facebook button gradient background */
+.facebook a {
+    margin: 20px 0 50px 0;
+    background: linear-gradient(to right, #3b5998 0%, #476bb8 100%);
+}
+
+/* Hover effects for social buttons */
+.twitter a:hover {
+    background: linear-gradient(to left, #00acee 0%, #1abeff 100%);
+}
+
+.facebook a:hover {
+    background: linear-gradient(to left, #3b5998 0%, #476bb8 100%);
+}
+
