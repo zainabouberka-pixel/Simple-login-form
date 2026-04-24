@@ -15,7 +15,7 @@ html ,body{
     height:100%;
     Width:100%;
     place-items: center ;
-    background:linear-gradient(to right, #99004d 0%, #ff0080 100%);
+    background-color: dimgray;
 }
 
 /* Container styling for the login card */
